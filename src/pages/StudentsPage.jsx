@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Box, Heading, Image, Text, Input, Button } from '@chakra-ui/react';
+import { Box, Heading, Image, Text, Input, Button, Icon } from '@chakra-ui/react';
 import { createStandaloneToast } from '@chakra-ui/toast';
 import { IoArrowForward, IoLogoGithub, IoLogoDribbble, IoLogoLinkedin } from 'react-icons/io5';
 import { retrieveSessionsByCode, addSessionAttendanceRecord } from 'utils/models/sessions';
@@ -231,9 +231,30 @@ const StudentsPage = () => {
                         Built by <span style={{ fontWeight: 'var(--chakra-fontWeights-black' }}>Harshith Latchupatula.</span>
                     </Text>
                     <Box display='flex' flexDirection='row' alignItems='center' gap='20px' margin='auto' marginRight='30px'>
-                        <IoLogoDribbble color='#051220' size={24} />
-                        <IoLogoLinkedin color='#051220' size={24} />
-                        <IoLogoGithub color='#051220' size={24} />
+                        <Icon
+                            as={IoLogoDribbble}
+                            _hover={{ filter: 'opacity(80%)', cursor: 'pointer' }}
+                            color='navy.600'
+                            width='24px'
+                            height='24px'
+                            onClick={() => window.open('https://dribbble.com/harshithl1777')}
+                        />
+                        <Icon
+                            as={IoLogoLinkedin}
+                            color='navy.600'
+                            _hover={{ filter: 'opacity(80%)', cursor: 'pointer' }}
+                            width='24px'
+                            height='24px'
+                            onClick={() => window.open('https://linkedin.com/in/harshithlatchupatula')}
+                        />
+                        <Icon
+                            as={IoLogoGithub}
+                            _hover={{ filter: 'opacity(80%)', cursor: 'pointer' }}
+                            color='navy.600'
+                            width='24px'
+                            height='24px'
+                            onClick={() => window.open('https://github.com/harshithl1777')}
+                        />
                     </Box>
                 </Box>
             </Box>

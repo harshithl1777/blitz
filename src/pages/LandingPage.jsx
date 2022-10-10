@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Button, Box, Heading, Text, Link, Modal, ModalOverlay, ModalContent, useDisclosure } from '@chakra-ui/react';
+import { Button, Box, Heading, Text, Link, Modal, ModalOverlay, ModalContent, useDisclosure, Icon } from '@chakra-ui/react';
 import { HiLightningBolt } from 'react-icons/hi';
 import { IoArrowForward, IoLogoGithub, IoLogoDribbble, IoLogoLinkedin } from 'react-icons/io5';
 import { AuthModal } from 'containers';
@@ -38,7 +38,7 @@ const LandingPage = () => {
                         color='white'
                         fontSize='lg'
                         _hover={{ cursor: 'pointer' }}
-                        href='https://github.com/harshithl1777/beacon'
+                        href='https://github.com/harshithl1777/blitz'
                     >
                         About
                     </Link>
@@ -47,7 +47,7 @@ const LandingPage = () => {
                         color='white'
                         fontSize='lg'
                         _hover={{ cursor: 'pointer' }}
-                        href='https://github.com/harshithl1777/beacon'
+                        href='https://github.com/harshithl1777/blitz'
                     >
                         Github
                     </Link>
@@ -126,9 +126,30 @@ const LandingPage = () => {
                     Built by <span style={{ fontWeight: 'var(--chakra-fontWeights-black' }}>Harshith Latchupatula.</span>
                 </Text>
                 <Box display='flex' flexDirection='row' alignItems='center' gap='20px' margin='auto' marginRight='30px'>
-                    <IoLogoDribbble color='white' size={24} />
-                    <IoLogoLinkedin color='white' size={24} />
-                    <IoLogoGithub color='white' size={24} />
+                    <Icon
+                        as={IoLogoDribbble}
+                        _hover={{ filter: 'brightness(80%)', cursor: 'pointer' }}
+                        color='white'
+                        width='24px'
+                        height='24px'
+                        onClick={() => window.open('https://dribbble.com/harshithl1777')}
+                    />
+                    <Icon
+                        as={IoLogoLinkedin}
+                        color='white'
+                        _hover={{ filter: 'brightness(90%)', cursor: 'pointer' }}
+                        width='24px'
+                        height='24px'
+                        onClick={() => window.open('https://linkedin.com/in/harshithlatchupatula')}
+                    />
+                    <Icon
+                        as={IoLogoGithub}
+                        _hover={{ filter: 'brightness(90%)', cursor: 'pointer' }}
+                        color='white'
+                        width='24px'
+                        height='24px'
+                        onClick={() => window.open('https://github.com/harshithl1777')}
+                    />
                 </Box>
             </div>
             {renderAuthModal()}
