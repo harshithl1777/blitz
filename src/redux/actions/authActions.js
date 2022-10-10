@@ -131,6 +131,6 @@ export const restoreAuthSession = (user) => async (dispatch) => {
 export const logOut = () => async (dispatch) => {
     const auth = getAuth();
     await auth.signOut();
-    window.location.href = '/auth';
+    window.location.href = '/';
     dispatch({ type: LOG_OUT, success: true });
 };
