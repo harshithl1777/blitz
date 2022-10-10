@@ -1,0 +1,58 @@
+.landingPageContainer {
+    background-color: var(--chakra-colors-navy-600);
+    height: 100vh;
+    width: 100vw;
+}
+
+.navigationBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 120px;
+}
+
+.navigationLeftContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    gap: 70px;
+}
+
+.navigationBarLogo {
+    margin-left: 35px;
+    width: 50px;
+    height: 50px;
+}
+
+.navigationRightContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin: auto;
+    margin-right: 30px;
+}
+
+.landingContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 160px;
+}
+
+.landingButtonContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+
+.footerBar {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
