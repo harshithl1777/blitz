@@ -16,7 +16,7 @@ With Blitz, taking attendance would look like this:
 5. All the attendance records will then be saved to a history tab after the attendance session ends for the teacher's reference.
 
 ### Tech Stack
-- `Firebase`, `React`, `Chakra UI`, `Redux`
+- `React`, `Redux`, `Firebase`, `Chakra UI`
 
 ### Gallery
 
